@@ -1,0 +1,148 @@
+:root {
+    --primary: #2a5b8c;
+    --secondary: #f4f7fa;
+    --accent: #ff6b35;
+    --dark: #1a3c5e;
+    --light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--secondary);
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: var(--light);
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Services Section */
+#services {
+    padding: 80px 0;
+    background: var(--light);
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--dark);
+    font-size: 2.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--secondary);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, var(--dark), #0f2a46);
+    color: var(--light);
+    text-align: center;
+    padding: 80px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-info {
+    margin: 30px 0;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: var(--light);
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    background: #0a1e30;
+    color: var(--light);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.2rem; }
+    #services h2, #contact h2 { font-size: 2rem; }
+}
